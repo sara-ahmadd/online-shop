@@ -1,0 +1,72 @@
+.link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: var(--white);
+  transition: 0.2s linear;
+  border-radius: var(--border-rad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  > svg {
+    fill: var(--white) !important;
+  }
+  &:hover {
+    color: var(--black);
+    background-color: var(--white);
+    .svg {
+      filter: invert(0%) sepia(80%) saturate(7427%) hue-rotate(268deg)
+        brightness(106%) contrast(94%);
+    }
+  }
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.img2 {
+  @extend .img;
+  filter: invert(73%) sepia(33%) saturate(2602%) hue-rotate(170deg)
+    brightness(101%) contrast(92%);
+}
+.btn {
+  border: none;
+  background: none;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  &:hover {
+    color: var(--black) !important;
+  }
+}
+.count {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: var(--red);
+  border-radius: var(--border-rad);
+  -webkit-border-radius: var(--border-rad);
+  -moz-border-radius: var(--border-rad);
+  -ms-border-radius: var(--border-rad);
+  -o-border-radius: var(--border-rad);
+}
+.svg {
+  color: var(--white);
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(236deg)
+    brightness(105%) contrast(102%);
+}
